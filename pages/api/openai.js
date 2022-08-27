@@ -8,7 +8,10 @@ export default async (req, res) => {
   const breakPoint = `\n\n'''\n\n`;
 
   // Construct the prompt
-  let prompt = `${beforePromt} ${breakPoint} ${req.body.name} ${breakPoint} ${afterPromt}`;
+  // let prompt = `${beforePromt} ${breakPoint} ${req.body.name} ${breakPoint} ${afterPromt}`;
+
+  let prompt =
+    "suggest three business ideas with VR based themes";
 
   // Log promt
   console.log(prompt);
@@ -18,7 +21,7 @@ export default async (req, res) => {
     engine: "text-davinci-002",
     prompt: `${prompt}`,
     maxTokens: 1500,
-    temperature: 0.7,
+    temperature: 0.9,
     topP: 1,
     presencePenalty: 0,
     frequencyPenalty: 0.5,
