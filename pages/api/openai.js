@@ -11,6 +11,8 @@ export default async (req, res) => {
   // let prompt = `${beforePromt} ${breakPoint} ${req.body.name} ${breakPoint} ${afterPromt}`;
   let prompt = "suggest three business ideas with VR based themes";
 
+  prompt2 = "level up";
+
   // Log promt
   console.log(prompt);
 
