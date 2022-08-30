@@ -9,7 +9,7 @@ export default async (req, res) => {
 
   // Construct the prompt
   // let prompt = `${beforePromt} ${breakPoint} ${req.body.name} ${breakPoint} ${afterPromt}`;
-  let prompt = "suggest three business ideas with VR based themes";
+  let prompt = `Generate blog ideas: ${req.body.name}`;
 
   // Log promt
   console.log(prompt);
