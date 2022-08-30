@@ -8,7 +8,8 @@ export default async (req, res) => {
   const breakPoint = `\n\n'''\n\n`;
 
   // Construct the prompt
-  let prompt = `${beforePromt} ${breakPoint} ${req.body.name} ${breakPoint} ${afterPromt}`;
+  // let prompt = `${beforePromt} ${breakPoint} ${req.body.name} ${breakPoint} ${afterPromt}`;
+  let prompt = `Expand the blog title into 6 high level blog sections: ${req.body.name}`;
 
   // Log promt
   console.log(prompt);
